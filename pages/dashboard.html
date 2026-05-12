@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Editor Dashboard - InkWave Magazine</title>
+  <link rel="stylesheet" href="../cssFile/globalStyles.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="../index.html" class="nav-logo">InkWave</a>
+      <button class="hamburger">☰</button>
+      <div class="nav-links">
+        <a href="../index.html" class="nav-link">Home</a>
+        <a href="articles.html" class="nav-link">Articles</a>
+        <a href="trending.html" class="nav-link">Trending</a>
+        <a href="categories.html" class="nav-link">Categories</a>
+        <a href="login.html" class="nav-link">Login</a>
+        <a href="dashboard.html" class="nav-link">Dashboard</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="section">
+    <div class="container stack-lg">
+      <div class="dashboard-header">
+        <h1>Editor Dashboard</h1>
+        <button class="btn-primary">Publish Report</button>
+      </div>
+
+      <div class="stats-row">
+        <div class="stat-card">
+          <div class="stat-number">124</div>
+          <div class="stat-label">Total Articles</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">8,500+</div>
+          <div class="stat-label">Total Readers</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">6</div>
+          <div class="stat-label">Total Categories</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">2,300+</div>
+          <div class="stat-label">Subscribers</div>
+        </div>
+      </div>
+
+      <div class="stats-row">
+        <div class="action-card">
+          <span class="action-icon">👁</span> View All Articles
+        </div>
+        <div class="action-card">
+          <span class="action-icon">➕</span> Add New Article
+        </div>
+        <div class="action-card">
+          <span class="action-icon">✏️</span> Edit Article
+        </div>
+        <div class="action-card">
+          <span class="action-icon">🗑</span> Delete Article
+        </div>
+      </div>
+
+      <div class="stack-md">
+        <h2>Monthly Article Views</h2>
+        <div class="chart-container">
+          <div class="chart-bar-wrapper">
+            <span class="chart-value">1200</span>
+            <div class="chart-bar h-32"></div>
+            <span class="chart-label">Jan</span>
+          </div>
+          <div class="chart-bar-wrapper">
+            <span class="chart-value">1800</span>
+            <div class="chart-bar h-47"></div>
+            <span class="chart-label">Feb</span>
+          </div>
+          <div class="chart-bar-wrapper">
+            <span class="chart-value">2400</span>
+            <div class="chart-bar h-63"></div>
+            <span class="chart-label">Mar</span>
+          </div>
+          <div class="chart-bar-wrapper">
+            <span class="chart-value">3100</span>
+            <div class="chart-bar h-82"></div>
+            <span class="chart-label">Apr</span>
+          </div>
+          <div class="chart-bar-wrapper">
+            <span class="chart-value">2700</span>
+            <div class="chart-bar h-71"></div>
+            <span class="chart-label">May</span>
+          </div>
+          <div class="chart-bar-wrapper">
+            <span class="chart-value">3800</span>
+            <div class="chart-bar h-100"></div>
+            <span class="chart-label">Jun</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="stack-md">
+        <h2>Recent Articles</h2>
+        <div class="search-bar-wrapper">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="dashboard-search" class="search-input" placeholder="Search articles table...">
+        </div>
+        
+        <div class="table-wrapper">
+          <table class="dashboard-table">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Title</th>
+                <th>Category</th>
+                <th>Author</th>
+                <th>Date</th>
+                <th>Status</th>
+                <th>Views</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>#1001</td>
+                <td>The Future of AI in 2026</td>
+                <td>Technology</td>
+                <td>John Doe</td>
+                <td>May 12, 2026</td>
+                <td>Published</td>
+                <td>45.2K</td>
+              </tr>
+              <tr>
+                <td>#1002</td>
+                <td>Summer Trends You Need</td>
+                <td>Fashion</td>
+                <td>Jane Smith</td>
+                <td>May 10, 2026</td>
+                <td>Published</td>
+                <td>32.1K</td>
+              </tr>
+              <tr>
+                <td>#1003</td>
+                <td>Mental Health First</td>
+                <td>Health</td>
+                <td>Dr. Allen</td>
+                <td>May 08, 2026</td>
+                <td>Published</td>
+                <td>28.5K</td>
+              </tr>
+              <tr>
+                <td>#1004</td>
+                <td>Championship Finals Recap</td>
+                <td>Sports</td>
+                <td>Mark Tyson</td>
+                <td>May 05, 2026</td>
+                <td>Draft</td>
+                <td>--</td>
+              </tr>
+              <tr>
+                <td>#1005</td>
+                <td>Sustainable Wardrobe 101</td>
+                <td>Fashion</td>
+                <td>Eco Style</td>
+                <td>May 04, 2026</td>
+                <td>Published</td>
+                <td>18.9K</td>
+              </tr>
+              <tr>
+                <td>#1006</td>
+                <td>Global Summit 2026</td>
+                <td>Politics</td>
+                <td>World News</td>
+                <td>May 03, 2026</td>
+                <td>Published</td>
+                <td>56.7K</td>
+              </tr>
+              <tr>
+                <td>#1007</td>
+                <td>Blockbuster Review</td>
+                <td>Entertainment</td>
+                <td>Cinephile</td>
+                <td>May 02, 2026</td>
+                <td>Archived</td>
+                <td>8.3K</td>
+              </tr>
+              <tr>
+                <td>#1008</td>
+                <td>Next-Gen Quantum Computers</td>
+                <td>Technology</td>
+                <td>Tech Team</td>
+                <td>May 01, 2026</td>
+                <td>Published</td>
+                <td>62.4K</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h3 class="footer-title">Quick Links</h3>
+          <a href="../index.html" class="footer-link">Home</a>
+          <a href="articles.html" class="footer-link">All Articles</a>
+          <a href="trending.html" class="footer-link">Trending Now</a>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-title">Categories</h3>
+          <a href="categories.html" class="footer-link">Technology</a>
+          <a href="categories.html" class="footer-link">Fashion</a>
+          <a href="categories.html" class="footer-link">Health</a>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-title">Social Media</h3>
+          <a href="#" class="footer-link">Twitter</a>
+          <a href="#" class="footer-link">Facebook</a>
+          <a href="#" class="footer-link">Instagram</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2026 InkWave Magazine. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="../jsFile/jsFunctions.js"></script>
+</body>
+</html>

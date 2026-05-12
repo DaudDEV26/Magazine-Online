@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Articles - InkWave Magazine</title>
+  <link rel="stylesheet" href="../cssFile/globalStyles.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="../index.html" class="nav-logo">InkWave</a>
+      <button class="hamburger">☰</button>
+      <div class="nav-links">
+        <a href="../index.html" class="nav-link">Home</a>
+        <a href="articles.html" class="nav-link">Articles</a>
+        <a href="trending.html" class="nav-link">Trending</a>
+        <a href="categories.html" class="nav-link">Categories</a>
+        <a href="login.html" class="nav-link">Login</a>
+        <a href="dashboard.html" class="nav-link">Dashboard</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="section">
+    <div class="container stack-lg">
+      <h1 class="section-title">All Articles</h1>
+      
+      <div class="search-bar-wrapper">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="article-search" class="search-input" placeholder="Search articles by title...">
+      </div>
+      
+      <div class="tags-row">
+        <button class="btn-tag" data-action="category-filter" data-active="true" data-filter="all">All</button>
+        <button class="btn-tag" data-action="category-filter" data-filter="technology">Technology</button>
+        <button class="btn-tag" data-action="category-filter" data-filter="fashion">Fashion</button>
+        <button class="btn-tag" data-action="category-filter" data-filter="health">Health</button>
+        <button class="btn-tag" data-action="category-filter" data-filter="sports">Sports</button>
+        <button class="btn-tag" data-action="category-filter" data-filter="politics">Politics</button>
+      </div>
+
+      <div class="flex-grid">
+        <article class="card-4" data-type="article" data-title="future of ai" data-category="technology">
+          <img src="../sources/tech.png" alt="Tech" class="card-img">
+          <div class="card-body">
+            <span class="card-tag">Technology</span>
+            <h3 class="card-title">Future of AI</h3>
+            <p class="card-excerpt">Exploring the next frontier of artificial intelligence and machine learning.</p>
+            <div class="card-meta">
+              <span>By Tech Team</span>
+              <span>May 12, 2026</span>
+            </div>
+            <a href="#" class="btn-outline">Read More</a>
+          </div>
+        </article>
+        
+        <article class="card-4" data-type="article" data-title="sustainable fashion trends" data-category="fashion">
+          <img src="../sources/fashion.png" alt="Fashion" class="card-img">
+          <div class="card-body">
+            <span class="card-tag">Fashion</span>
+            <h3 class="card-title">Sustainable Fashion Trends</h3>
+            <p class="card-excerpt">How the fashion industry is adapting to eco-friendly practices this year.</p>
+            <div class="card-meta">
+              <span>By Style Guide</span>
+              <span>May 11, 2026</span>
+            </div>
+            <a href="#" class="btn-outline">Read More</a>
+          </div>
+        </article>
+
+        <article class="card-4" data-type="article" data-title="mental health strategies" data-category="health">
+          <img src="../sources/article.png" alt="Health" class="card-img">
+          <div class="card-body">
+            <span class="card-tag">Health</span>
+            <h3 class="card-title">Mental Health Strategies</h3>
+            <p class="card-excerpt">Simple daily habits that can significantly improve your mental wellbeing.</p>
+            <div class="card-meta">
+              <span>By Dr. Wellness</span>
+              <span>May 10, 2026</span>
+            </div>
+            <a href="#" class="btn-outline">Read More</a>
+          </div>
+        </article>
+
+        <article class="card-4" data-type="article" data-title="championship highlights" data-category="sports">
+          <img src="../sources/article.png" alt="Sports" class="card-img">
+          <div class="card-body">
+            <span class="card-tag">Sports</span>
+            <h3 class="card-title">Championship Highlights</h3>
+            <p class="card-excerpt">All the key moments from last night's incredible sports finale.</p>
+            <div class="card-meta">
+              <span>By Sports Desk</span>
+              <span>May 09, 2026</span>
+            </div>
+            <a href="#" class="btn-outline">Read More</a>
+          </div>
+        </article>
+
+        <article class="card-4" data-type="article" data-title="global summit analysis" data-category="politics">
+          <img src="../sources/article.png" alt="Politics" class="card-img">
+          <div class="card-body">
+            <span class="card-tag">Politics</span>
+            <h3 class="card-title">Global Summit Analysis</h3>
+            <p class="card-excerpt">Breaking down the agreements and disagreements at the global leaders summit.</p>
+            <div class="card-meta">
+              <span>By Policy Expert</span>
+              <span>May 08, 2026</span>
+            </div>
+            <a href="#" class="btn-outline">Read More</a>
+          </div>
+        </article>
+
+        <article class="card-4" data-type="article" data-title="smart home devices" data-category="technology">
+          <img src="../sources/tech.png" alt="Tech" class="card-img">
+          <div class="card-body">
+            <span class="card-tag">Technology</span>
+            <h3 class="card-title">Smart Home Devices</h3>
+            <p class="card-excerpt">The newest gadgets that will completely automate your living space.</p>
+            <div class="card-meta">
+              <span>By Gadget Guru</span>
+              <span>May 07, 2026</span>
+            </div>
+            <a href="#" class="btn-outline">Read More</a>
+          </div>
+        </article>
+
+        <article class="card-4" data-type="article" data-title="summer fashion essentials" data-category="fashion">
+          <img src="../sources/fashion.png" alt="Fashion" class="card-img">
+          <div class="card-body">
+            <span class="card-tag">Fashion</span>
+            <h3 class="card-title">Summer Fashion Essentials</h3>
+            <p class="card-excerpt">The definitive list of wardrobe staples you need for the hot months ahead.</p>
+            <div class="card-meta">
+              <span>By Trend Setter</span>
+              <span>May 06, 2026</span>
+            </div>
+            <a href="#" class="btn-outline">Read More</a>
+          </div>
+        </article>
+
+        <article class="card-4" data-type="article" data-title="nutrition myths debunked" data-category="health">
+          <img src="../sources/article.png" alt="Health" class="card-img">
+          <div class="card-body">
+            <span class="card-tag">Health</span>
+            <h3 class="card-title">Nutrition Myths Debunked</h3>
+            <p class="card-excerpt">Separating fact from fiction when it comes to popular diet advice.</p>
+            <div class="card-meta">
+              <span>By Dietitian Jane</span>
+              <span>May 05, 2026</span>
+            </div>
+            <a href="#" class="btn-outline">Read More</a>
+          </div>
+        </article>
+
+        <article class="card-4" data-type="article" data-title="marathon training guide" data-category="sports">
+          <img src="../sources/article.png" alt="Sports" class="card-img">
+          <div class="card-body">
+            <span class="card-tag">Sports</span>
+            <h3 class="card-title">Marathon Training Guide</h3>
+            <p class="card-excerpt">Everything a beginner needs to know to successfully finish a marathon.</p>
+            <div class="card-meta">
+              <span>By Runner Pro</span>
+              <span>May 04, 2026</span>
+            </div>
+            <a href="#" class="btn-outline">Read More</a>
+          </div>
+        </article>
+      </div>
+
+      <div class="pagination">
+        <div class="page-link" data-active-page="true">1</div>
+        <div class="page-link">2</div>
+        <div class="page-link">3</div>
+        <div class="page-link page-next">Next</div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h3 class="footer-title">Quick Links</h3>
+          <a href="../index.html" class="footer-link">Home</a>
+          <a href="articles.html" class="footer-link">All Articles</a>
+          <a href="trending.html" class="footer-link">Trending Now</a>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-title">Categories</h3>
+          <a href="categories.html" class="footer-link">Technology</a>
+          <a href="categories.html" class="footer-link">Fashion</a>
+          <a href="categories.html" class="footer-link">Health</a>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-title">Social Media</h3>
+          <a href="#" class="footer-link">Twitter</a>
+          <a href="#" class="footer-link">Facebook</a>
+          <a href="#" class="footer-link">Instagram</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2026 InkWave Magazine. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="../jsFile/jsFunctions.js"></script>
+</body>
+</html>

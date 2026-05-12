@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - InkWave Magazine</title>
+  <link rel="stylesheet" href="../cssFile/globalStyles.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="../index.html" class="nav-logo">InkWave</a>
+      <button class="hamburger">☰</button>
+      <div class="nav-links">
+        <a href="../index.html" class="nav-link">Home</a>
+        <a href="articles.html" class="nav-link">Articles</a>
+        <a href="trending.html" class="nav-link">Trending</a>
+        <a href="categories.html" class="nav-link">Categories</a>
+        <a href="login.html" class="nav-link">Login</a>
+        <a href="dashboard.html" class="nav-link">Dashboard</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="login-wrapper">
+    <form class="login-card" id="login-form">
+      <div class="login-logo">InkWave</div>
+      
+      <div class="form-group">
+        <input type="email" id="login-email" class="form-input" placeholder="Email Address">
+        <span class="error-msg" id="email-error">Please enter a valid email address.</span>
+      </div>
+      
+      <div class="form-group">
+        <div class="input-icon-wrapper">
+          <input type="password" id="login-password" class="form-input" placeholder="Password">
+          <span class="password-toggle" id="toggle-password">Show</span>
+        </div>
+        <span class="error-msg" id="password-error">Password is required.</span>
+      </div>
+      
+      <button type="submit" class="btn-primary">Login</button>
+      
+      <div class="text-center">
+        <span class="card-excerpt">Don't have an account? <a href="#" class="btn-tag">Register</a></span>
+      </div>
+    </form>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h3 class="footer-title">Quick Links</h3>
+          <a href="../index.html" class="footer-link">Home</a>
+          <a href="articles.html" class="footer-link">All Articles</a>
+          <a href="trending.html" class="footer-link">Trending Now</a>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-title">Categories</h3>
+          <a href="categories.html" class="footer-link">Technology</a>
+          <a href="categories.html" class="footer-link">Fashion</a>
+          <a href="categories.html" class="footer-link">Health</a>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-title">Social Media</h3>
+          <a href="#" class="footer-link">Twitter</a>
+          <a href="#" class="footer-link">Facebook</a>
+          <a href="#" class="footer-link">Instagram</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2026 InkWave Magazine. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="../jsFile/jsFunctions.js"></script>
+</body>
+</html>

@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InkWave Magazine - Stories That Matter</title>
+  <link rel="stylesheet" href="cssFile/globalStyles.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="nav-logo">InkWave</a>
+      <button class="hamburger">☰</button>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="pages/articles.html" class="nav-link">Articles</a>
+        <a href="pages/trending.html" class="nav-link">Trending</a>
+        <a href="pages/categories.html" class="nav-link">Categories</a>
+        <a href="pages/login.html" class="nav-link">Login</a>
+        <a href="pages/dashboard.html" class="nav-link">Dashboard</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="container hero-wrapper">
+      <div class="hero-content">
+        <h1 class="hero-title">Welcome to InkWave Magazine</h1>
+        <p class="hero-tagline">"Stories That Matter"</p>
+        <div class="hero-actions">
+          <a href="pages/articles.html" class="btn-primary">Read Now</a>
+          <a href="#newsletter" class="btn-outline">Subscribe</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="sources/hero.png" alt="Hero Illustration">
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Featured Articles</h2>
+      <div class="flex-grid">
+        <article class="card-3" data-type="article">
+          <img src="sources/tech.png" alt="Tech" class="card-img">
+          <div class="card-body">
+            <span class="card-tag">Technology</span>
+            <h3 class="card-title">The Future of AI in 2026</h3>
+            <p class="card-excerpt">A deep dive into how artificial intelligence is reshaping our daily lives.</p>
+            <div class="card-meta">
+              <span>By John Doe</span>
+              <span>May 12, 2026</span>
+            </div>
+            <a href="pages/articles.html" class="btn-outline">Read More</a>
+          </div>
+        </article>
+        <article class="card-3" data-type="article">
+          <img src="sources/fashion.png" alt="Fashion" class="card-img">
+          <div class="card-body">
+            <span class="card-tag">Fashion</span>
+            <h3 class="card-title">Summer Trends You Need</h3>
+            <p class="card-excerpt">Discover the hottest fashion trends hitting the streets this summer season.</p>
+            <div class="card-meta">
+              <span>By Jane Smith</span>
+              <span>May 10, 2026</span>
+            </div>
+            <a href="pages/articles.html" class="btn-outline">Read More</a>
+          </div>
+        </article>
+        <article class="card-3" data-type="article">
+          <img src="sources/article.png" alt="Health" class="card-img">
+          <div class="card-body">
+            <span class="card-tag">Health</span>
+            <h3 class="card-title">Mental Health First</h3>
+            <p class="card-excerpt">Why prioritizing your mental wellbeing is more important than ever.</p>
+            <div class="card-meta">
+              <span>By Dr. Allen</span>
+              <span>May 08, 2026</span>
+            </div>
+            <a href="pages/articles.html" class="btn-outline">Read More</a>
+          </div>
+        </article>
+        <article class="card-3" data-type="article">
+          <img src="sources/article.png" alt="Sports" class="card-img">
+          <div class="card-body">
+            <span class="card-tag">Sports</span>
+            <h3 class="card-title">Championship Finals Recap</h3>
+            <p class="card-excerpt">A full recap of the thrilling finale to this year's biggest tournament.</p>
+            <div class="card-meta">
+              <span>By Mark Tyson</span>
+              <span>May 05, 2026</span>
+            </div>
+            <a href="pages/articles.html" class="btn-outline">Read More</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-dark">
+    <div class="container stack-lg">
+      <h2 class="section-title">Trending Topics</h2>
+      <div class="tags-row">
+        <button class="btn-tag" data-action="trending-filter" data-active="true" data-filter="all">All</button>
+        <button class="btn-tag" data-action="trending-filter" data-filter="technology">Technology</button>
+        <button class="btn-tag" data-action="trending-filter" data-filter="fashion">Fashion</button>
+        <button class="btn-tag" data-action="trending-filter" data-filter="politics">Politics</button>
+        <button class="btn-tag" data-action="trending-filter" data-filter="sports">Sports</button>
+        <button class="btn-tag" data-action="trending-filter" data-filter="health">Health</button>
+        <button class="btn-tag" data-action="trending-filter" data-filter="entertainment">Entertainment</button>
+      </div>
+      
+      <div class="flex-grid">
+        <article class="card-4" data-type="trending-article" data-category="technology">
+          <img src="sources/tech.png" alt="Tech" class="card-img">
+          <div class="card-body">
+            <span class="card-tag">Technology</span>
+            <h3 class="card-title">Next-Gen Quantum Computers</h3>
+            <p class="card-excerpt">How quantum computing is leaving the lab and entering the real world.</p>
+            <div class="card-meta">
+              <span>By Tech Team</span>
+              <span>May 11, 2026</span>
+            </div>
+          </div>
+        </article>
+        <article class="card-4" data-type="trending-article" data-category="fashion">
+          <img src="sources/fashion.png" alt="Fashion" class="card-img">
+          <div class="card-body">
+            <span class="card-tag">Fashion</span>
+            <h3 class="card-title">Sustainable Wardrobe 101</h3>
+            <p class="card-excerpt">Building a beautiful wardrobe without harming the planet.</p>
+            <div class="card-meta">
+              <span>By Eco Style</span>
+              <span>May 09, 2026</span>
+            </div>
+          </div>
+        </article>
+        <article class="card-4" data-type="trending-article" data-category="sports">
+          <img src="sources/article.png" alt="Sports" class="card-img">
+          <div class="card-body">
+            <span class="card-tag">Sports</span>
+            <h3 class="card-title">The Underdog Story</h3>
+            <p class="card-excerpt">How an unknown team fought their way to the grand finals.</p>
+            <div class="card-meta">
+              <span>By Sports Desk</span>
+              <span>May 07, 2026</span>
+            </div>
+          </div>
+        </article>
+        <article class="card-4" data-type="trending-article" data-category="politics">
+          <img src="sources/article.png" alt="Politics" class="card-img">
+          <div class="card-body">
+            <span class="card-tag">Politics</span>
+            <h3 class="card-title">Global Summit 2026</h3>
+            <p class="card-excerpt">Key takeaways from the biggest international summit of the year.</p>
+            <div class="card-meta">
+              <span>By World News</span>
+              <span>May 06, 2026</span>
+            </div>
+          </div>
+        </article>
+        <article class="card-4" data-type="trending-article" data-category="health">
+          <img src="sources/article.png" alt="Health" class="card-img">
+          <div class="card-body">
+            <span class="card-tag">Health</span>
+            <h3 class="card-title">Superfoods of the Future</h3>
+            <p class="card-excerpt">What you should be adding to your daily diet for maximum longevity.</p>
+            <div class="card-meta">
+              <span>By Health Dept</span>
+              <span>May 04, 2026</span>
+            </div>
+          </div>
+        </article>
+        <article class="card-4" data-type="trending-article" data-category="entertainment">
+          <img src="sources/article.png" alt="Entertainment" class="card-img">
+          <div class="card-body">
+            <span class="card-tag">Entertainment</span>
+            <h3 class="card-title">Blockbuster Review</h3>
+            <p class="card-excerpt">An honest review of the most anticipated movie release this summer.</p>
+            <div class="card-meta">
+              <span>By Cinephile</span>
+              <span>May 02, 2026</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Browse by Category</h2>
+      <div class="flex-grid">
+        <a href="pages/categories.html" class="category-card" data-type="category-card">
+          <img src="sources/category.svg" alt="Tech" class="category-large-img">
+          <h3 class="category-large-title">Technology</h3>
+          <span class="category-large-count">24 Articles</span>
+        </a>
+        <a href="pages/categories.html" class="category-card" data-type="category-card">
+          <img src="sources/category.svg" alt="Fashion" class="category-large-img">
+          <h3 class="category-large-title">Fashion</h3>
+          <span class="category-large-count">18 Articles</span>
+        </a>
+        <a href="pages/categories.html" class="category-card" data-type="category-card">
+          <img src="sources/category.svg" alt="Health" class="category-large-img">
+          <h3 class="category-large-title">Health</h3>
+          <span class="category-large-count">15 Articles</span>
+        </a>
+        <a href="pages/categories.html" class="category-card" data-type="category-card">
+          <img src="sources/category.svg" alt="Sports" class="category-large-img">
+          <h3 class="category-large-title">Sports</h3>
+          <span class="category-large-count">12 Articles</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Latest Articles</h2>
+      <div class="flex-grid">
+        <article class="card-4" data-type="article">
+          <img src="sources/tech.png" alt="Tech" class="card-img">
+          <div class="card-body">
+            <span class="card-tag">Technology</span>
+            <h3 class="card-title">Smartphone Evolution</h3>
+            <p class="card-excerpt">Where do we go from here in mobile technology?</p>
+            <div class="card-meta">
+              <span>By J. Doe</span>
+              <span>May 12, 2026</span>
+            </div>
+          </div>
+        </article>
+        <article class="card-4" data-type="article">
+          <img src="sources/article.png" alt="Politics" class="card-img">
+          <div class="card-body">
+            <span class="card-tag">Politics</span>
+            <h3 class="card-title">Election Campaigns</h3>
+            <p class="card-excerpt">Early start for the upcoming regional elections.</p>
+            <div class="card-meta">
+              <span>By P. Smith</span>
+              <span>May 11, 2026</span>
+            </div>
+          </div>
+        </article>
+        <article class="card-4" data-type="article">
+          <img src="sources/fashion.png" alt="Fashion" class="card-img">
+          <div class="card-body">
+            <span class="card-tag">Fashion</span>
+            <h3 class="card-title">Retro Revival</h3>
+            <p class="card-excerpt">Why the 90s are making a huge comeback this year.</p>
+            <div class="card-meta">
+              <span>By F. Guru</span>
+              <span>May 10, 2026</span>
+            </div>
+          </div>
+        </article>
+        <article class="card-4" data-type="article">
+          <img src="sources/article.png" alt="Health" class="card-img">
+          <div class="card-body">
+            <span class="card-tag">Health</span>
+            <h3 class="card-title">Sleep Cycles</h3>
+            <p class="card-excerpt">Understanding the deep sleep stages for better rest.</p>
+            <div class="card-meta">
+              <span>By Dr. Zee</span>
+              <span>May 09, 2026</span>
+            </div>
+          </div>
+        </article>
+        <article class="card-4" data-type="article">
+          <img src="sources/article.png" alt="Entertainment" class="card-img">
+          <div class="card-body">
+            <span class="card-tag">Entertainment</span>
+            <h3 class="card-title">Music Festivals</h3>
+            <p class="card-excerpt">Top 10 music festivals to attend around the globe.</p>
+            <div class="card-meta">
+              <span>By DJ R.</span>
+              <span>May 08, 2026</span>
+            </div>
+          </div>
+        </article>
+        <article class="card-4" data-type="article">
+          <img src="sources/article.png" alt="Sports" class="card-img">
+          <div class="card-body">
+            <span class="card-tag">Sports</span>
+            <h3 class="card-title">Marathon Training</h3>
+            <p class="card-excerpt">A beginner's guide to completing your first full marathon.</p>
+            <div class="card-meta">
+              <span>By Runner X</span>
+              <span>May 07, 2026</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="newsletter">
+    <div class="container">
+      <div class="newsletter">
+        <h2 class="text-center">Subscribe to Our Newsletter</h2>
+        <p>Get the latest stories delivered right to your inbox.</p>
+        <form class="newsletter-form" id="newsletter-form">
+          <input type="email" id="newsletter-email" class="form-input" placeholder="Enter your email address">
+          <button type="submit" class="btn-primary">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h3 class="footer-title">Quick Links</h3>
+          <a href="index.html" class="footer-link">Home</a>
+          <a href="pages/articles.html" class="footer-link">All Articles</a>
+          <a href="pages/trending.html" class="footer-link">Trending Now</a>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-title">Categories</h3>
+          <a href="pages/categories.html" class="footer-link">Technology</a>
+          <a href="pages/categories.html" class="footer-link">Fashion</a>
+          <a href="pages/categories.html" class="footer-link">Health</a>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-title">Social Media</h3>
+          <a href="#" class="footer-link">Twitter</a>
+          <a href="#" class="footer-link">Facebook</a>
+          <a href="#" class="footer-link">Instagram</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2026 InkWave Magazine. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="jsFile/jsFunctions.js"></script>
+</body>
+</html>

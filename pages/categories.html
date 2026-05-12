@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Categories - InkWave Magazine</title>
+  <link rel="stylesheet" href="../cssFile/globalStyles.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="../index.html" class="nav-logo">InkWave</a>
+      <button class="hamburger">☰</button>
+      <div class="nav-links">
+        <a href="../index.html" class="nav-link">Home</a>
+        <a href="articles.html" class="nav-link">Articles</a>
+        <a href="trending.html" class="nav-link">Trending</a>
+        <a href="categories.html" class="nav-link">Categories</a>
+        <a href="login.html" class="nav-link">Login</a>
+        <a href="dashboard.html" class="nav-link">Dashboard</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="section">
+    <div class="container stack-lg">
+      <h1 class="section-title">Browse by Category</h1>
+      
+      <div class="flex-grid">
+        <div class="category-card" data-type="category-card" data-category="technology">
+          <img src="../sources/category.svg" alt="Tech" class="category-large-img">
+          <h2 class="category-large-title">Technology</h2>
+          <span class="category-large-count">24 Articles</span>
+          <button class="btn-outline">Browse</button>
+        </div>
+        <div class="category-card" data-type="category-card" data-category="fashion">
+          <img src="../sources/category.svg" alt="Fashion" class="category-large-img">
+          <h2 class="category-large-title">Fashion</h2>
+          <span class="category-large-count">18 Articles</span>
+          <button class="btn-outline">Browse</button>
+        </div>
+        <div class="category-card" data-type="category-card" data-category="health">
+          <img src="../sources/category.svg" alt="Health" class="category-large-img">
+          <h2 class="category-large-title">Health</h2>
+          <span class="category-large-count">15 Articles</span>
+          <button class="btn-outline">Browse</button>
+        </div>
+        <div class="category-card" data-type="category-card" data-category="sports">
+          <img src="../sources/category.svg" alt="Sports" class="category-large-img">
+          <h2 class="category-large-title">Sports</h2>
+          <span class="category-large-count">12 Articles</span>
+          <button class="btn-outline">Browse</button>
+        </div>
+        <div class="category-card" data-type="category-card" data-category="politics">
+          <img src="../sources/category.svg" alt="Politics" class="category-large-img">
+          <h2 class="category-large-title">Politics</h2>
+          <span class="category-large-count">30 Articles</span>
+          <button class="btn-outline">Browse</button>
+        </div>
+        <div class="category-card" data-type="category-card" data-category="entertainment">
+          <img src="../sources/category.svg" alt="Entertainment" class="category-large-img">
+          <h2 class="category-large-title">Entertainment</h2>
+          <span class="category-large-count">22 Articles</span>
+          <button class="btn-outline">Browse</button>
+        </div>
+      </div>
+
+      <div id="filtered-category-articles" data-hidden="true" class="stack-lg">
+        <h2 class="section-title">Articles in Category</h2>
+        <div class="flex-grid">
+          <article class="card-4" data-type="filtered-article" data-category="technology">
+            <img src="../sources/tech.png" alt="Tech" class="card-img">
+            <div class="card-body">
+              <span class="card-tag">Technology</span>
+              <h3 class="card-title">Tech Innovations 2026</h3>
+              <p class="card-excerpt">A look into the new tech trends of the year.</p>
+              <a href="#" class="btn-outline">Read More</a>
+            </div>
+          </article>
+          <article class="card-4" data-type="filtered-article" data-category="fashion">
+            <img src="../sources/fashion.png" alt="Fashion" class="card-img">
+            <div class="card-body">
+              <span class="card-tag">Fashion</span>
+              <h3 class="card-title">Paris Fashion Week</h3>
+              <p class="card-excerpt">Highlights from the most anticipated fashion event.</p>
+              <a href="#" class="btn-outline">Read More</a>
+            </div>
+          </article>
+          <article class="card-4" data-type="filtered-article" data-category="health">
+            <img src="../sources/article.png" alt="Health" class="card-img">
+            <div class="card-body">
+              <span class="card-tag">Health</span>
+              <h3 class="card-title">Healthy Living Habits</h3>
+              <p class="card-excerpt">How to stay fit and healthy in a busy world.</p>
+              <a href="#" class="btn-outline">Read More</a>
+            </div>
+          </article>
+          <article class="card-4" data-type="filtered-article" data-category="sports">
+            <img src="../sources/article.png" alt="Sports" class="card-img">
+            <div class="card-body">
+              <span class="card-tag">Sports</span>
+              <h3 class="card-title">World Cup Update</h3>
+              <p class="card-excerpt">Latest scores and news from the global tournament.</p>
+              <a href="#" class="btn-outline">Read More</a>
+            </div>
+          </article>
+          <article class="card-4" data-type="filtered-article" data-category="politics">
+            <img src="../sources/article.png" alt="Politics" class="card-img">
+            <div class="card-body">
+              <span class="card-tag">Politics</span>
+              <h3 class="card-title">Elections Coverage</h3>
+              <p class="card-excerpt">Full coverage of the upcoming regional elections.</p>
+              <a href="#" class="btn-outline">Read More</a>
+            </div>
+          </article>
+          <article class="card-4" data-type="filtered-article" data-category="entertainment">
+            <img src="../sources/article.png" alt="Entertainment" class="card-img">
+            <div class="card-body">
+              <span class="card-tag">Entertainment</span>
+              <h3 class="card-title">Music Awards Night</h3>
+              <p class="card-excerpt">Who won big at this year's music awards show.</p>
+              <a href="#" class="btn-outline">Read More</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h3 class="footer-title">Quick Links</h3>
+          <a href="../index.html" class="footer-link">Home</a>
+          <a href="articles.html" class="footer-link">All Articles</a>
+          <a href="trending.html" class="footer-link">Trending Now</a>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-title">Categories</h3>
+          <a href="categories.html" class="footer-link">Technology</a>
+          <a href="categories.html" class="footer-link">Fashion</a>
+          <a href="categories.html" class="footer-link">Health</a>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-title">Social Media</h3>
+          <a href="#" class="footer-link">Twitter</a>
+          <a href="#" class="footer-link">Facebook</a>
+          <a href="#" class="footer-link">Instagram</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2026 InkWave Magazine. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="../jsFile/jsFunctions.js"></script>
+</body>
+</html>
