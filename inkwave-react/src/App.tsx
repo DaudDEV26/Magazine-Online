@@ -1,3 +1,4 @@
+// inkwave-react/src/App.tsx
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar/page';
 import Footer from './components/Footer/page';
