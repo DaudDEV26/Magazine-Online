@@ -32,41 +32,52 @@ export default function Login() {
   }
 
   return (
-    <div className="login-wrapper">
-      <form className="login-card" onSubmit={handleSubmit}>
-        <div className="login-logo">InkWave</div>
+    <div className="flex justify-center items-center min-h-[calc(100vh-200px)] py-10 px-5">
+      <form
+        className="bg-white p-10 rounded-2xl shadow-[0_4px_15px_rgba(0,0,0,0.08)] w-full max-w-[400px] flex flex-col gap-5"
+        onSubmit={handleSubmit}
+      >
+        <div className="text-center font-serif text-3xl font-bold text-[#1a1a2e] mb-2.5">InkWave</div>
 
-        <div className="form-group">
+        {/* Email */}
+        <div className="flex flex-col gap-2 w-full">
           <input
             type="email"
-            className={`form-input${emailError ? ' error' : ''}`}
+            className={`px-4 py-3 border rounded-lg text-base outline-none transition-colors duration-300 ${emailError ? 'border-[#e94560]' : 'border-[#e0e0e0]'}`}
             placeholder="Email Address"
             value={email}
             onChange={e => setEmail(e.target.value)}
           />
-          {emailError && <span className="error-msg show">Please enter a valid email address.</span>}
+          {emailError && <span className="text-[#e94560] text-xs">Please enter a valid email address.</span>}
         </div>
 
-        <div className="form-group">
-          <div className="input-icon-wrapper">
+        {/* Password */}
+        <div className="flex flex-col gap-2 w-full">
+          <div className="relative flex items-center">
             <input
               type={showPassword ? 'text' : 'password'}
-              className={`form-input${passwordError ? ' error' : ''}`}
+              className={`w-full px-4 py-3 border rounded-lg text-base outline-none transition-colors duration-300 ${passwordError ? 'border-[#e94560]' : 'border-[#e0e0e0]'}`}
               placeholder="Password"
               value={password}
               onChange={e => setPassword(e.target.value)}
             />
-            <span className="password-toggle" onClick={() => setShowPassword(!showPassword)}>
+            <span
+              className="absolute right-4 cursor-pointer text-[#888888]"
+              onClick={() => setShowPassword(!showPassword)}
+            >
               {showPassword ? 'Hide' : 'Show'}
             </span>
           </div>
-          {passwordError && <span className="error-msg show">Password is required.</span>}
+          {passwordError && <span className="text-[#e94560] text-xs">Password is required.</span>}
         </div>
 
-        <button type="submit" className="btn-primary">Login</button>
+        <button type="submit" className="px-6 py-2.5 rounded-full font-semibold bg-[#e94560] text-white hover:bg-[#d83550] transition-colors duration-300 cursor-pointer">Login</button>
 
         <div className="text-center">
-          <span className="card-excerpt">Don't have an account? <a href="#" className="btn-tag">Register</a></span>
+          <span className="text-[#888888] text-sm">
+            Don't have an account?{' '}
+            <a href="#" className="bg-[#eef0f5] text-[#4a4a6a] px-4 py-1.5 rounded-full text-sm font-semibold hover:bg-[#e94560] hover:text-white transition-colors duration-300">Register</a>
+          </span>
         </div>
       </form>
     </div>

@@ -15,7 +15,7 @@ const filteredArticles = [
   { category: 'health', img: '/images/article.png', tag: 'Health', title: 'Healthy Living Habits', excerpt: 'How to stay fit and healthy in a busy world.' },
   { category: 'sports', img: '/images/article.png', tag: 'Sports', title: 'World Cup Update', excerpt: 'Latest scores and news from the global tournament.' },
   { category: 'politics', img: '/images/article.png', tag: 'Politics', title: 'Elections Coverage', excerpt: 'Full coverage of the upcoming regional elections.' },
-  { category: 'entertainment', img: '/images/article.png', tag: 'Entertainment', title: 'Music Awards Night', excerpt: 'Who won big at this year\'s music awards show.' },
+  { category: 'entertainment', img: '/images/article.png', tag: 'Entertainment', title: 'Music Awards Night', excerpt: "Who won big at this year's music awards show." },
 ];
 
 export default function Categories() {
@@ -33,37 +33,37 @@ export default function Categories() {
   }
 
   return (
-    <section className="section">
-      <div className="container stack-lg">
-        <h1 className="section-title">Browse by Category</h1>
+    <section className="py-16">
+      <div className="w-full max-w-[1200px] mx-auto px-5 flex flex-col gap-10">
+        <h1 className="font-serif text-3xl text-center relative after:content-[''] after:block after:w-16 after:h-[3px] after:bg-[#e94560] after:mx-auto after:mt-2.5">Browse by Category</h1>
 
-        <div className="flex-grid">
+        <div className="flex flex-wrap gap-5">
           {categories.map(c => (
             <div
-              className="category-card"
               key={c.key}
               onClick={() => handleCategoryClick(c.key)}
+              className="w-full md:w-[calc(33.333%-14px)] text-center cursor-pointer bg-white p-10 rounded-2xl shadow-[0_4px_15px_rgba(0,0,0,0.08)] border-2 border-transparent hover:border-[#e94560] hover:-translate-y-1.5 transition-all duration-300 flex flex-col items-center gap-4"
             >
-              <img src="/images/category.svg" alt={c.name} className="category-large-img" />
-              <h2 className="category-large-title">{c.name}</h2>
-              <span className="category-large-count">{c.count}</span>
-              <button className="btn-outline">Browse</button>
+              <img src="/images/category.svg" alt={c.name} className="w-20 h-20" />
+              <h2 className="font-serif text-xl">{c.name}</h2>
+              <span className="text-[#888888] text-sm">{c.count}</span>
+              <button className="px-6 py-2.5 rounded-full font-semibold border-2 border-[#e94560] text-[#e94560] hover:bg-[#e94560] hover:text-white transition-colors duration-300">Browse</button>
             </div>
           ))}
         </div>
 
         {selectedCategory && (
-          <div id="filtered-category-articles" className="stack-lg">
-            <h2 className="section-title">Articles in Category</h2>
-            <div className="flex-grid">
+          <div id="filtered-category-articles" className="flex flex-col gap-10">
+            <h2 className="font-serif text-3xl text-center relative after:content-[''] after:block after:w-16 after:h-[3px] after:bg-[#e94560] after:mx-auto after:mt-2.5">Articles in Category</h2>
+            <div className="flex flex-wrap gap-5">
               {visibleArticles.map((a, i) => (
-                <article className="card-4" key={i}>
-                  <img src={a.img} alt={a.tag} className="card-img" />
-                  <div className="card-body">
-                    <span className="card-tag">{a.tag}</span>
-                    <h3 className="card-title">{a.title}</h3>
-                    <p className="card-excerpt">{a.excerpt}</p>
-                    <a href="#" className="btn-outline">Read More</a>
+                <article key={i} className="w-full md:w-[calc(33.333%-14px)] bg-white rounded-2xl shadow-[0_4px_15px_rgba(0,0,0,0.08)] overflow-hidden border-2 border-transparent hover:shadow-[0_8px_25px_rgba(0,0,0,0.15)] hover:border-[#e94560] transition-all duration-300 flex flex-col">
+                  <img src={a.img} alt={a.tag} className="w-full h-48 object-cover" />
+                  <div className="p-5 flex flex-col gap-2.5 flex-1">
+                    <span className="text-[#e94560] text-xs font-semibold uppercase">{a.tag}</span>
+                    <h3 className="font-serif text-lg">{a.title}</h3>
+                    <p className="text-[#888888] text-sm mb-4">{a.excerpt}</p>
+                    <a href="#" className="px-6 py-2.5 rounded-full font-semibold border-2 border-[#e94560] text-[#e94560] hover:bg-[#e94560] hover:text-white transition-colors duration-300 text-center">Read More</a>
                   </div>
                 </article>
               ))}

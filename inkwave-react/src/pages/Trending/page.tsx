@@ -28,25 +28,27 @@ const trendingTags = ['#Quantum', '#ClimateAction', '#RetroFashion', '#AI2026', 
 export default function Trending() {
   return (
     <>
-      <section className="trending-hero">
-        <div className="container">
-          <h1 className="trending-hero-title">What's Trending Today</h1>
+      {/* Trending Hero */}
+      <section className="text-center py-16 bg-[#1a1a2e] text-white">
+        <div className="w-full max-w-[1200px] mx-auto px-5">
+          <h1 className="font-serif text-4xl mb-2.5">What's Trending Today</h1>
           <p>The stories everyone is talking about across the globe.</p>
         </div>
       </section>
 
-      <section className="section">
-        <div className="container stack-lg">
+      <section className="py-16">
+        <div className="w-full max-w-[1200px] mx-auto px-5 flex flex-col gap-10">
 
-          <div className="stack-md">
+          {/* Featured large cards */}
+          <div className="flex flex-col gap-5">
             {featuredTrending.map((a, i) => (
-              <article className="large-card" key={i}>
-                <img src="/images/article.png" alt="Trending" className="large-card-img" />
-                <div className="large-card-body">
-                  <span className="card-tag">{a.tag}</span>
-                  <h2 className="large-card-title">{a.title}</h2>
-                  <p className="card-excerpt">{a.excerpt}</p>
-                  <div className="card-meta">
+              <article key={i} className="flex flex-col md:flex-row bg-white rounded-2xl shadow-[0_4px_15px_rgba(0,0,0,0.08)] overflow-hidden mb-8 border-2 border-transparent hover:border-[#e94560] hover:shadow-[0_8px_25px_rgba(0,0,0,0.15)] transition-all duration-300">
+                <img src="/images/article.png" alt="Trending" className="w-full md:w-2/5 object-cover" />
+                <div className="p-8 flex flex-col justify-center w-full md:w-3/5">
+                  <span className="text-[#e94560] text-xs font-semibold uppercase">{a.tag}</span>
+                  <h2 className="font-serif text-2xl my-2.5">{a.title}</h2>
+                  <p className="text-[#888888] text-sm mb-4">{a.excerpt}</p>
+                  <div className="flex justify-between text-xs text-[#888888] mt-auto items-center">
                     <span>👁 {a.views}</span>
                     <span>♥ {a.likes}</span>
                   </div>
@@ -55,40 +57,45 @@ export default function Trending() {
             ))}
           </div>
 
-          <div className="stack-md">
-            <h3 className="text-center">Trending Tags</h3>
-            <div className="tags-row">
+          {/* Trending Tags */}
+          <div className="flex flex-col gap-5">
+            <h3 className="font-serif text-xl text-center">Trending Tags</h3>
+            <div className="flex flex-wrap justify-center gap-2.5 mb-8">
               {trendingTags.map(tag => (
-                <button key={tag} className="btn-tag">{tag}</button>
+                <button key={tag} className="bg-[#eef0f5] text-[#4a4a6a] px-4 py-1.5 rounded-full text-sm font-semibold cursor-pointer hover:bg-[#e94560] hover:text-white transition-colors duration-300">{tag}</button>
               ))}
             </div>
           </div>
 
-          <div className="split-row">
-            <div className="col-half stack-md">
-              <h3>Weekly Top 10</h3>
+          {/* Top 10 + Most Liked */}
+          <div className="flex flex-col md:flex-row gap-10 flex-wrap">
+
+            {/* Weekly Top 10 */}
+            <div className="w-full md:w-[calc(50%-20px)] flex flex-col gap-5">
+              <h3 className="font-serif text-xl">Weekly Top 10</h3>
               {top10.map((item, i) => (
-                <div className="list-card" key={i}>
-                  <div className="list-rank">{i + 1}</div>
-                  <img src="/images/article.png" alt="Thumb" className="list-img" />
-                  <div className="list-info">
-                    <div className="list-title">{item.title}</div>
-                    <div className="list-meta">{item.meta}</div>
+                <div key={i} className="flex items-center bg-white p-4 rounded-2xl mb-4 shadow-[0_4px_15px_rgba(0,0,0,0.08)] hover:translate-x-1.5 hover:border-l-4 hover:border-[#e94560] transition-all duration-300">
+                  <div className="font-serif text-2xl font-bold text-[#e0e0e0] w-10">{i + 1}</div>
+                  <img src="/images/article.png" alt="Thumb" className="w-16 h-16 rounded-lg object-cover mr-4" />
+                  <div className="flex-1">
+                    <div className="font-semibold mb-1">{item.title}</div>
+                    <div className="text-xs text-[#888888]">{item.meta}</div>
                   </div>
                 </div>
               ))}
             </div>
 
-            <div className="col-half stack-md">
-              <h3>Most Liked This Month</h3>
+            {/* Most Liked */}
+            <div className="w-full md:w-[calc(50%-20px)] flex flex-col gap-5">
+              <h3 className="font-serif text-xl">Most Liked This Month</h3>
               {mostLiked.map((a, i) => (
-                <article className="card-12" key={i}>
-                  <img src={a.img} alt={a.tag} className="card-img" />
-                  <div className="card-body">
-                    <span className="card-tag">{a.tag}</span>
-                    <h3 className="card-title">{a.title}</h3>
-                    <p className="card-excerpt">{a.excerpt}</p>
-                    <div className="card-meta">
+                <article key={i} className="w-full bg-white rounded-2xl shadow-[0_4px_15px_rgba(0,0,0,0.08)] overflow-hidden border-2 border-transparent hover:shadow-[0_8px_25px_rgba(0,0,0,0.15)] hover:border-[#e94560] transition-all duration-300 flex flex-col">
+                  <img src={a.img} alt={a.tag} className="w-full h-48 object-cover" />
+                  <div className="p-5 flex flex-col gap-2.5 flex-1">
+                    <span className="text-[#e94560] text-xs font-semibold uppercase">{a.tag}</span>
+                    <h3 className="font-serif text-lg">{a.title}</h3>
+                    <p className="text-[#888888] text-sm mb-4">{a.excerpt}</p>
+                    <div className="flex justify-between text-xs text-[#888888] mt-auto items-center">
                       <span>♥ {a.likes}</span>
                       <span>{a.date}</span>
                     </div>
@@ -96,8 +103,8 @@ export default function Trending() {
                 </article>
               ))}
             </div>
-          </div>
 
+          </div>
         </div>
       </section>
     </>
