@@ -91,11 +91,11 @@ export default function Reviews() {
         </div>
 
         {/* Review grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="flex flex-wrap gap-6">
           {filtered.map(review => (
             <div
               key={review.id}
-              className="bg-white dark:bg-[#1a1a2e] rounded-2xl shadow-[0_4px_15px_rgba(0,0,0,0.08)] p-6 flex flex-col gap-4 border-2 border-transparent hover:border-[#e94560] hover:shadow-[0_8px_25px_rgba(0,0,0,0.15)] transition-all duration-300"
+              className="w-full md:w-[calc(33.333%-16px)] bg-white dark:bg-[#1a1a2e] rounded-2xl shadow-[0_4px_15px_rgba(0,0,0,0.08)] p-6 flex flex-col gap-4 border-2 border-transparent hover:border-[#e94560] hover:shadow-[0_8px_25px_rgba(0,0,0,0.15)] transition-all duration-300"
             >
               {/* Stars */}
               <StarRating rating={review.rating} />

@@ -1,25 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap');
 @import "tailwindcss";
 
-@theme {
-  --font-sans: 'Inter', sans-serif;
-  --font-serif: 'Playfair Display', serif;
-}
+/* Tell Tailwind v4 to activate dark: variants when .dark is on <html> */
+@variant dark (&:where(.dark, .dark *));
 
 @layer base {
   body {
-    @apply bg-[#f8f9fa] text-[#1a1a2e] font-sans transition-colors duration-300;
+    @apply bg-[#f8f9fa] text-[#1a1a2e] transition-colors duration-300;
+    font-family: 'Inter', sans-serif;
   }
 
   #root {
     @apply min-h-screen flex flex-col;
-  }
-
-  .dark body {
-    @apply bg-[#0f0f1a] text-[#f0f0f0];
-  }
-
-  .dark #root {
-    @apply bg-[#0f0f1a];
   }
 }

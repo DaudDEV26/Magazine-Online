@@ -13,12 +13,12 @@ const tableData = [
 ];
 
 const chartData = [
-  { label: 'Jan', value: 1200, heightPct: 32 },
-  { label: 'Feb', value: 1800, heightPct: 47 },
-  { label: 'Mar', value: 2400, heightPct: 63 },
-  { label: 'Apr', value: 3100, heightPct: 82 },
-  { label: 'May', value: 2700, heightPct: 71 },
-  { label: 'Jun', value: 3800, heightPct: 100 },
+  { label: 'Jan', value: 1200, barClass: 'h-[32%]' },
+  { label: 'Feb', value: 1800, barClass: 'h-[47%]' },
+  { label: 'Mar', value: 2400, barClass: 'h-[63%]' },
+  { label: 'Apr', value: 3100, barClass: 'h-[82%]' },
+  { label: 'May', value: 2700, barClass: 'h-[71%]' },
+  { label: 'Jun', value: 3800, barClass: 'h-[100%]' },
 ];
 
 const statusColor: Record<string, string> = {
@@ -51,6 +51,7 @@ export default function Dashboard() {
             { number: '8,500+', label: 'Total Readers'    },
             { number: '6',      label: 'Total Categories' },
             { number: '2,300+', label: 'Subscribers'      },
+            { number: '9',      label: 'Reviews'          },
           ].map((s, i) => (
             <div key={i} className="bg-white dark:bg-[#1a1a2e] p-6 rounded-2xl shadow-[0_4px_15px_rgba(0,0,0,0.08)] flex flex-col items-center justify-center text-center flex-1 min-w-[180px] transition-colors duration-300">
               <div className="font-serif text-4xl font-bold text-[#1a1a2e] dark:text-white">{s.number}</div>
@@ -80,7 +81,7 @@ export default function Dashboard() {
             {chartData.map(bar => (
               <div key={bar.label} className="flex flex-col items-center w-10 h-full justify-end">
                 <span className="text-[10px] text-[#888888] dark:text-[#a0a0b8] mb-1">{bar.value}</span>
-                <div className="w-full bg-[#e94560] rounded-t hover:bg-[#1a1a2e] dark:hover:bg-white transition-colors duration-200" style={{ height: `${bar.heightPct}%` }} />
+                <div className={`w-full bg-[#e94560] rounded-t hover:bg-[#1a1a2e] dark:hover:bg-white transition-colors duration-200 ${bar.barClass}`} />
                 <span className="mt-2 text-xs text-[#4a4a6a] dark:text-[#c0c0d0] font-semibold">{bar.label}</span>
               </div>
             ))}
